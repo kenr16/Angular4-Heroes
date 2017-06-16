@@ -28,10 +28,7 @@ export class HeroDetailComponent implements OnInit {
       this.heroToDisplay = dataLastEmittedFromObserver;
       console.log(this.heroToDisplay);
     })
-
-
-
-   
+    
   }
 
 }

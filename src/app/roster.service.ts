@@ -18,4 +18,8 @@ export class RosterService {
     var toReturn = this.database.object('heroes/' + heroId);
     return toReturn;
   }
+
+  addHero(newHero: Superhero) {
+    this.heroes.push(newHero);
+  }
 }

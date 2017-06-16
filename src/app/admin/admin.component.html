@@ -1,0 +1,66 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Hero/Villian to the roster</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Codename:</label>
+        <br>
+        <input #newAlias>
+      </div>
+
+      <div>
+        <label>Real name:</label>
+        <br>
+        <input #newName>
+      </div>
+
+      <div>
+        <label>Superpower(s):</label>
+        <br>
+        <input #newSuperpower>
+      </div>
+
+      <div>
+        <label>Power level:</label>
+        <br>
+        <input #newPowerlevel>
+      </div>
+
+      <div>
+        <label>Bio or background details:</label>
+        <br>
+        <textarea #newBio></textarea>
+      </div>
+
+      <div>
+        <label>Team affiliation:</label>
+        <br>
+        <input #newTeam>
+      </div>
+
+      <div>
+        <label>Alignment good/evil/neutral:</label>
+        <br>
+        <input #newAffiliation>
+      </div>
+
+      <div>
+        <label>New profile picture Link:</label>
+        <br>
+        <input #newPhotosmall>
+      </div>
+
+      <div>
+        <label>New fullsize photo:</label>
+        <br>
+        <input #newPhotolarge>
+      </div>
+
+      <button (click)="submitForm(
+      newAlias.value, newName.value, newSuperpower.value, newPowerlevel.value, newBio.value, newTeam.value, newAffiliation.value, newPhotosmall.value, newPhotolarge.value); newAlias.value=''; newName.value=''; newSuperpower.value=''; newPowerlevel.value=''; newBio.value=''; newTeam.value=''; newAffiliation.value=''; newPhotosmall.value=''; newPhotolarge.value=''">Add</button>
+
+    </div>
+  </div>
+</div>

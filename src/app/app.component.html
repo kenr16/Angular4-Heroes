@@ -1,4 +1,41 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Epicodus Tunes</a>
+    </div>
+
+    <div class="navbar-nav navbar-right">
+      <div >{{errorMessage}}</div>
+      <!-- *ngIf="(errorMessage | async) != null" -->
+
+      <label>Email:</label>
+      <input #email>
+
+      <label>Password:</label>
+      <input type="password" #password>
+
+      <button (click)="login(email.value, password.value); email.value=''; password.value=''">Login</button>
+      <button (click)="logout()">Logout</button>
+
+      <div *ngIf="(user | async) == null"> Please log in. </div>
+      <div *ngIf="(user | async) != null"> Welcome in {{ (user | async)?.email }}! </div>
+    </div>
+
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="about">About</a></li>
+      <li><a routerLink="marketplace">Marketplace</a></li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
   <h1>{{title}}</h1>
   <router-outlet></router-outlet>
 </div>
+
+<footer class="footer" *ngIf="(user | async) != null">
+  <div class="container">
+    <a class="text-muted" routerLink="admin">Admin</a>
+  </div>
+</footer>
