@@ -4,8 +4,20 @@
 
 <h2>Heroes Roster</h2>
 
-<div *ngFor="let hero of heroes | async" (click)="goToDetailPage(hero)" class="panel panel-default">
-  <div class="panel-body">
+<select (change)="onChangeTeam($event.target.value)">
+  <option value="allTeams" selected="selected">All Teams</option>
+  <option value="X-Men Gold Team">X-Men Gold Team</option>
+  <option value="X-Men Blue Team">X-Men Blue Team</option>
+</select>
+
+<select (change)="onChangeAffiliation($event.target.value)">
+  <option value="all" selected="selected">All Affiliations</option>
+  <option value="Heroes">Heroes</option>
+  <option value="Villians">Villians</option>
+</select>
+
+<div *ngFor="let hero of heroes | async | teamPipe:teamFilter | affiliationPipe:affiliationFilter">
+  <div class="panel-body" (click)="goToDetailPage(hero)">
     <img src={{hero.photosmall}}/><h3><em>{{hero.alias}}</em> aka: {{hero.name}}</h3>
   </div>
 </div>

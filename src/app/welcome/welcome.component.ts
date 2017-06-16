@@ -11,6 +11,8 @@ import { RosterService } from '../roster.service';
 })
 export class WelcomeComponent implements OnInit {
   heroes;
+  teamFilter: string = 'allTeams';
+  affiliationFilter: string = 'all';
 
   constructor(private router: Router, private rosterService: RosterService) {}
 
@@ -22,6 +24,13 @@ export class WelcomeComponent implements OnInit {
      this.router.navigate(['heroes', superhero.$key]);
    };
 
+   onChangeTeam(selectedTeam) {
+     this.teamFilter = selectedTeam;
+   }
+
+
+
+   affiliationFilter
 
 
 }
