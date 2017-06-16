@@ -22,4 +22,20 @@ export class RosterService {
   addHero(newHero: Superhero) {
     this.heroes.push(newHero);
   }
+
+  updateHero(selectedHero) {
+    var heroEntryInFirebase = this.getHeroById(selectedHero.$key);
+    heroEntryInFirebase.update({
+      alias: selectedHero.alias,
+      name: selectedHero.name,
+      superpower: selectedHero.superpower,
+      powerlevel: selectedHero.powerlevel,
+      bio: selectedHero.bio,
+      team: selectedHero.team,
+      affiliation: selectedHero.affiliation,
+      photosmall: selectedHero.photosmall,
+      photolarge: selectedHero.photolarge
+    });
+  }
+
 }
