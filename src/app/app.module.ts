@@ -11,6 +11,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
+import { TeamPipe } from './team.pipe';
+import { AffiliationPipe } from './affiliation.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +27,9 @@ export const firebaseConfig = {
     WelcomeComponent,
     HeroDetailComponent,
     AboutComponent,
-    AdminComponent
+    AdminComponent,
+    TeamPipe,
+    AffiliationPipe
   ],
   imports: [
     BrowserModule,
