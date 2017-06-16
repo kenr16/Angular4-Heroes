@@ -24,7 +24,7 @@ export class AdminComponent implements OnInit {
   }
 
   submitForm(alias: string, name: string, superpower: string, powerlevel: number, bio: string, team: string, affiliation: string, photosmall: string, photolarge: string) {
-    var newHero: Superhero = new Superhero( 10, alias, name, superpower, powerlevel, bio, team, affiliation, photosmall, photolarge);
+    var newHero: Superhero = new Superhero(alias, name, superpower, powerlevel, bio, team, affiliation, photosmall, photolarge);
     console.log(newHero);
     this.rosterService.addHero(newHero);
   }

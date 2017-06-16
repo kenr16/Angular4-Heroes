@@ -8,3 +8,10 @@
   background-color: #f5f5f5;
   padding: 15px;
 }
+
+img {
+  object-fit: cover;
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+}

@@ -1,6 +1,5 @@
 export class Superhero {
   constructor (
-    public id: number,
     public alias: string,
     public name: string,
     public superpower: string,
