@@ -18,6 +18,13 @@
 
 <div *ngFor="let hero of heroes | async | teamPipe:teamFilter | affiliationPipe:affiliationFilter">
   <div class="panel-body" (click)="goToDetailPage(hero)">
+    <hr>
     <img src={{hero.photosmall}}/><h3><em>{{hero.alias}}</em> aka: {{hero.name}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+
+      <app-edit-hero [selectedHero]="hero"></app-edit-hero>
+
+
+    </div>
   </div>
 </div>

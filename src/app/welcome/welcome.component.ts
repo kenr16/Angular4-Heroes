@@ -13,6 +13,7 @@ export class WelcomeComponent implements OnInit {
   heroes;
   teamFilter: string = 'allTeams';
   affiliationFilter: string = 'all';
+  currentRoute: string = this.router.url;
 
   constructor(private router: Router, private rosterService: RosterService) {}
 
