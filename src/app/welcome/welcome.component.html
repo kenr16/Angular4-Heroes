@@ -16,6 +16,14 @@
   <option value="Villians">Villians</option>
 </select>
 
+<label>Minimum Power Level:</label>
+<input type="range" min="0" max="10" value={{minBarValue}} step="1" (change)="showMinValue($event.target.value)" />
+<span id="range">{{minBarValue}}</span>
+
+<label>Maximum Power Level:</label>
+<input type="range" min="0" max="10" value={{maxBarValue}} step="1" (change)="showMaxValue($event.target.value)" />
+<span id="range">{{maxBarValue}}</span>
+
 <div *ngFor="let hero of heroes | async | teamPipe:teamFilter | affiliationPipe:affiliationFilter">
   <div class="panel-body" (click)="goToDetailPage(hero)">
     <hr>

@@ -14,6 +14,8 @@ export class WelcomeComponent implements OnInit {
   teamFilter: string = 'allTeams';
   affiliationFilter: string = 'all';
   currentRoute: string = this.router.url;
+  minBarValue: number = 0;
+  maxBarValue: number = 10;
 
   constructor(private router: Router, private rosterService: RosterService) {}
 
@@ -31,6 +33,14 @@ export class WelcomeComponent implements OnInit {
 
    onChangeAffiliation(selectedAffiliation) {
      this.affiliationFilter = selectedAffiliation;
+   }
+
+   showMinValue(newValue) {
+     this.minBarValue = newValue;
+   }
+
+   showMaxValue(newValue) {
+     this.maxBarValue = newValue;
    }
 
 
