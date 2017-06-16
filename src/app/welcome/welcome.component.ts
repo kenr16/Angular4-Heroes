@@ -28,9 +28,11 @@ export class WelcomeComponent implements OnInit {
      this.teamFilter = selectedTeam;
    }
 
+   onChangeAffiliation(selectedAffiliation) {
+     this.affiliationFilter = selectedAffiliation;
+   }
 
 
-   affiliationFilter
 
 
 }
