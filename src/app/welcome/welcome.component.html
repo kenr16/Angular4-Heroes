@@ -24,10 +24,21 @@
 <input type="range" min="0" max="10" value={{maxBarValue}} step="1" (change)="showMaxValue($event.target.value)" />
 <span id="range">{{maxBarValue}}</span>
 
+
+<img src="../../../map2.jpg" alt="" usemap="#Map" />
+<map name="Map" id="Map">
+    <area (click)="lowerManhattan()" alt="" title="" href="#" shape="poly" coords="238,672,316,641,393,643,570,607,586,704,517,775,273,774" />
+    <area (click)="upperManhattan()" alt="" title="" href="#" shape="poly" coords="109,72,110,75,111,93,127,127,128,214,117,249,117,369,170,521,551,518,475,391,478,354,466,331,466,180,485,104,483,72" />
+    <area (click)="greenwichVillage()" alt="" title="" href="#" shape="poly" coords="171,523,234,670,315,639,393,641,568,605,549,520" />
+</map>
+
+
+
+
 <div *ngFor="let hero of heroes | async | teamPipe:teamFilter | affiliationPipe:affiliationFilter">
   <div class="panel-body" (click)="goToDetailPage(hero)">
     <hr>
-    <img src={{hero.photosmall}}/><h3><em>{{hero.alias}}</em> aka: {{hero.name}}</h3>
+    <img src={{hero.photosmall}} class="profilepic"/><h3><em>{{hero.alias}}</em> aka: {{hero.name}}</h3>
     <div *ngIf="currentRoute === '/admin'">
 
       <app-edit-hero [selectedHero]="hero"></app-edit-hero>

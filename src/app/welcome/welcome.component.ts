@@ -43,7 +43,15 @@ export class WelcomeComponent implements OnInit {
      this.maxBarValue = newValue;
    }
 
-
+   lowerManhattan() {
+     alert("The X-Men");
+   }
+   upperManhattan() {
+     alert("The Avengers");
+   }
+   greenwichVillage() {
+     alert("The Fantastic Four");
+   }
 
 
 }

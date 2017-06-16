@@ -53,5 +53,16 @@
     "affiliation": "Heroes",
     "photosmall": "https://static.comicvine.com/uploads/original/12/129116/4372263-5321356645-Profe.jpg",
     "photolarge": "https://vignette3.wikia.nocookie.net/vsbattles/images/a/a7/Charles_Xavier_%28Earth-1610%29.png/revision/latest?cb=20150910000051"
+    }, {
+    "id": "5",
+    "alias": "Archangel",
+    "name": "Warren Worthington III",
+    "superpower": "Razor wings, poison feathers",
+    "powerlevel": 7,
+    "bio": "None availible",
+    "team": "X-Men",
+    "affiliation": "Heroes",
+    "photosmall": "https://i.annihil.us/u/prod/marvel/i/mg/4/c0/537b886f4929f/standard_xlarge.jpg",
+    "photolarge": "https://s-media-cache-ak0.pinimg.com/originals/b0/91/3b/b0913b901c2225c83f42865760316631.png"
   }]
 }

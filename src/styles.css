@@ -9,7 +9,7 @@
   padding: 15px;
 }
 
-img {
+.profilepic {
   object-fit: cover;
   width:150px;
   height:150px;
