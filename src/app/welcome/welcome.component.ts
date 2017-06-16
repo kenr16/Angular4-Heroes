@@ -18,6 +18,10 @@ export class WelcomeComponent implements OnInit {
     this.heroes = this.rosterService.getHeroes();
   }
 
+  goToDetailPage(hero: Superhero) {
+     this.router.navigate(['heroes', hero.id]);
+   };
+
 
 
 }

@@ -15,10 +15,7 @@ export class RosterService {
   }
 
   getHeroById(heroId: number){
-    // for (var i = 0; i <= HEROES.length - 1; i++) {
-    //   if (HEROS[i].id === heroId) {
-    //     return HEROES[i];
-    //   }
-    // }
+    var toReturn = this.database.object('heroes/' + heroId);
+    return toReturn;
   }
 }

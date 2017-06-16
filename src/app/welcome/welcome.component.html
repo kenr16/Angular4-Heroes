@@ -4,10 +4,8 @@
 
 <h2>Heroes Roster</h2>
 
-<div *ngFor="let hero of heroes | async" class="panel panel-default">
+<div *ngFor="let hero of heroes | async" (click)="goToDetailPage(hero)" class="panel panel-default">
   <div class="panel-body">
     <h3><em>{{hero.alias}}</em> aka: {{hero.name}}</h3>
   </div>
 </div>
-
-<!-- (click)="goToDetailPage(album)" -->
