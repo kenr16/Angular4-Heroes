@@ -1,0 +1,42 @@
+{ "heroes": [{
+    "alias": "Cyclops",
+    "name": "Scott Summers",
+    "superpower": "Optic Blasts",
+    "powerlevel": 8,
+    "bio": "None availible",
+    "team": "X-Men",
+    "affiliation": "Heroes",
+    "photosmall": "https://vignette1.wikia.nocookie.net/marvel-contestofchampions/images/a/a0/Cyclops_%28Blue_Team%29_portrait.png/revision/latest?cb=20160122010538",
+    "photolarge": "http://vignette2.wikia.nocookie.net/vsbattles/images/a/ac/Uncanny_Cyclops_Portrait_Art.png/revision/latest?cb=20151006231608"
+    }, {
+    "alias": "Phoenix",
+    "name": "Jean Grey",
+    "superpower": "Telekinesis, Telepathy",
+    "powerlevel": 10,
+    "bio": "None availible",
+    "team": "X-Men",
+    "affiliation": "Heroes",
+    "photosmall": "https://vignette3.wikia.nocookie.net/p__/images/0/0c/Jean_Grey_90s.jpg/revision/latest?cb=20150830155522&path-prefix=protagonist",
+    "photolarge": "https://vignette1.wikia.nocookie.net/vsbattles/images/6/6c/FULL_JeanGreyPhoenix.png/revision/latest/scale-to-width-down/1000?cb=20170324163121"
+    }, {
+    "alias": "Wolverine",
+    "name": "James Howlett",
+    "superpower": "Healing Factor, Claws",
+    "powerlevel": 6,
+    "bio": "None availible",
+    "team": "X-Men",
+    "affiliation": "Heroes",
+    "photosmall": "https://vignette4.wikia.nocookie.net/marvel-contestofchampions/images/b/b4/Wolverine_portrait.png/revision/latest?cb=20150830080538",
+    "photolarge": "https://vignette2.wikia.nocookie.net/vsbattles/images/5/5b/Wolverine_Portrait_Art.png/revision/latest/scale-to-width-down/1000?cb=20151204133058"
+    }, {
+    "alias": "Professor X",
+    "name": "Charles Francis Xavier",
+    "superpower": "Telepathy, Mind-Control",
+    "powerlevel": 10,
+    "bio": "None availible",
+    "team": "X-Men",
+    "affiliation": "Heroes",
+    "photosmall": "https://static.comicvine.com/uploads/original/12/129116/4372263-5321356645-Profe.jpg",
+    "photolarge": "https://vignette3.wikia.nocookie.net/vsbattles/images/a/a7/Charles_Xavier_%28Earth-1610%29.png/revision/latest?cb=20150910000051"
+  }]
+}

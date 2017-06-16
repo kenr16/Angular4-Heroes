@@ -7,5 +7,7 @@ export class Superhero {
     public bio: string,
     public team: string,
     public affiliation: string,
+    public photosmall: string,
+    public photolarge: string
   ) { }
 }
