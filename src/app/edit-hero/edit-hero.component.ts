@@ -20,4 +20,10 @@ export class EditHeroComponent implements OnInit {
     this.rosterService.updateHero(selectedHero);
   }
 
+  beginDeletingHero(selectedHero) {
+    if(confirm("Are you sure you want to delete this hero from the roster?")){
+      this.rosterService.deleteHero(selectedHero);
+    }
+  }
+
 }

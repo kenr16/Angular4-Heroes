@@ -38,4 +38,14 @@ export class RosterService {
     });
   }
 
+  deleteHero(selectedHero){
+    var heroEntryInFirebase = this.getHeroById(selectedHero.$key);
+    heroEntryInFirebase.remove();
+  }
+
+
+
+
+
+
 }
