@@ -64,5 +64,66 @@
     "affiliation": "Heroes",
     "photosmall": "https://i.annihil.us/u/prod/marvel/i/mg/4/c0/537b886f4929f/standard_xlarge.jpg",
     "photolarge": "https://s-media-cache-ak0.pinimg.com/originals/b0/91/3b/b0913b901c2225c83f42865760316631.png"
+    }, {
+    "id": "6",
+    "alias": "Thor",
+    "name": "Donald Blake",
+    "superpower": "Super strength, flight, lightning strikes, magical hammer",
+    "powerlevel": 9,
+    "bio": "None availible",
+    "team": "Avengers",
+    "affiliation": "Heroes",
+    "photosmall": "https://latimesherocomplex.files.wordpress.com/2008/09/thor.jpg",
+    "photolarge": "http://www.writeups.org/wp-content/uploads/Thor-Marvel-Comics-Odinson-Profile-d.jpg"
+    }, {
+    "id": "7",
+    "alias": "Captain America",
+    "name": "Steve Rogers",
+    "superpower": "Super strength, super speed, the writer is always on his side",
+    "powerlevel": 6,
+    "bio": "None availible",
+    "team": "Avengers",
+    "affiliation": "Heroes",
+    "photosmall": "https://static.comicvine.com/uploads/scale_small/3/31666/5052983-capasr2016001-eptingvar-18bdb.jpg",
+    "photolarge": "http://www.dailywire.com/sites/default/files/uploads/2016/05/4600115-4965840965-45196.jpg"
+    }, {
+    "id": "8",
+    "alias": "Black Widow",
+    "name": "Natasha Romanov",
+    "superpower": "Spy training",
+    "powerlevel": 5,
+    "bio": "None availible",
+    "team": "Avengers",
+    "affiliation": "Heroes",
+    "photosmall": "https://i.annihil.us/u/prod/marvel//universe3zx/images/f/f9/BlackWidow.jpg",
+    "photolarge": "http://vignette4.wikia.nocookie.net/marveldatabase/images/d/de/Natalia_Romanova_(Earth-12131)_007.png"
+    }, {
+    "id": "9",
+    "alias": "Mr Fantastic",
+    "name": "Reed Richards",
+    "superpower": "Superhuman stretch",
+    "powerlevel": 4,
+    "bio": "None availible",
+    "team": "Fantastic Four",
+    "affiliation": "Heroes",
+    "photosmall": "http://vignette2.wikia.nocookie.net/marveldatabase/images/f/f3/What_If_Vol_1_42_page_05_Reed_Richards_%28Earth-8312%29.jpg/revision/latest?cb=20100407044304",
+    "photolarge": "https://vignette1.wikia.nocookie.net/vsbattles/images/4/4a/ReedRender.png"
+    }, {
+    "id": "10",
+    "alias": "Invisible Woman",
+    "name": "Sue Richards",
+    "superpower": "Invisibility, force fields",
+    "powerlevel": 4,
+    "bio": "None availible",
+    "team": "Fantastic Four",
+    "affiliation": "Heroes",
+    "photosmall": "http://pre06.deviantart.net/4a0a/th/pre/i/2011/223/8/3/invisible_woman_by_ratscape-d466x7d.jpg",
+    "photolarge": "http://1.bp.blogspot.com/-auTnyxGSPi4/T-xScGD6RoI/AAAAAAAAQ_4/zmhbhpUz2mQ/s1600/marvel+png+(7).png"
+
+
+
+
+
+
   }]
 }

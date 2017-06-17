@@ -45,12 +45,15 @@ export class WelcomeComponent implements OnInit {
 
    lowerManhattan() {
      alert("The X-Men");
+     this.teamFilter = 'X-Men';
    }
    upperManhattan() {
      alert("The Avengers");
+     this.teamFilter = 'Avengers';
    }
    greenwichVillage() {
      alert("The Fantastic Four");
+     this.teamFilter = 'Fantastic Four';
    }
 
 
