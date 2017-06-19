@@ -2,32 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.  Superhero team an app that displays a list of various superheroes from the Marvel universe and bios, stats and superpowers.  This app will allow for full CRUD functionality on the superhero entries.  Because of the fact that user authentication has been enabled, creating a firebase database, populating it with JSON data, then allowing for login using email and passwords are required.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
+## Running
 
 git clone https://github.com/kenr16/Angular4-Heroes
 cd Angular4-Heroes
@@ -36,11 +11,11 @@ bower install
 bower install bootstrap --save
 apm install atom-typescript
 
-You may also need to run the line:
-npm install promise-polyfill --save-exact
-In order to get the firebase database working properly.
+You may also need to run the line in order to get the firebase database working properly.:
 
-Open in your text editor of choice. Create a file in the src folder called api-keys.ts with the following:
+npm install promise-polyfill --save-exact
+
+Log into firebase and og to your console, create a new project.  Click on database and then populate the new project with the sample-heroes.json file located in the parent folder of this project.  Click on the 'rules' tab and set both read and write to equal true.  Click on the authentication tab on the left, and under the blue users tab, add a new user with an e-mail and password of your choice.  From there, click on the blue Sign-In method tab right next to the users tab.  Set Email/Password option to be enabled.  Click on the 'Web Setup' option in the upper righthand corner, use the information from the modal that pops up to populate the api-keys.ts file, which you should create in your 'src' folder with the following format:
 
 export var masterFirebaseConfig = {
   apiKey: "YOURAPIKEY",
@@ -50,19 +25,22 @@ export var masterFirebaseConfig = {
   messagingSenderId: "YOURID"
 };
 
-The data above will need to be populated with your Firebase information.
-
-Log in to https://firebase.google.com and create new web app to obtain your API info.
-
-Additionally in your Firebase application you will want to set the following read/write rules for the database:
-
-{
-  "rules": {
-    ".read": true,
-    ".write": true
-  }
-}
-
 Development server
 
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+## Known Bugs
+
+There are currently no known bugs. If you discover a bug, please raise an issue here.
+
+## Support and contact details
+
+For further support, please contact Ken Rutan via his Github account.  E-mail will not be listed here as this README is publicly displayed.
+
+## Technologies Used
+
+This website was constructed using HTML, CSS and Javascript as well as jQuerey elements running on Angular2 framework.
+
+## License
+
+&copy; _year_ Ken Rutan _MIT_  **MIT License**
