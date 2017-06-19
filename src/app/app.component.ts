@@ -13,7 +13,7 @@ import * as firebase from 'firebase/app';
 export class AppComponent {
 
   user: Observable<firebase.User>;
-  title = 'app works!';
+  title = 'Superhero Database!';
 
   constructor(public afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
